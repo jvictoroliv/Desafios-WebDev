@@ -1,0 +1,45 @@
+#home {
+    background-image: url(/images/fundo.png);
+}
+
+body {
+    background-image: url(/images/fundo2.png);
+}
+
+body {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header>img {
+    padding-top: 5px;
+}
+
+.header>nav {
+    justify-content: flex-end;
+}
+
+.cover {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#baseboard {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.textBox>p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
