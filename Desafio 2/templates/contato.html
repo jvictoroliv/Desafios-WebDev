@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <!-- Image -->
+        <img src="{{ url_for('static', filename='logo.png') }}"" alt="Logo">
+        <!-- Links -->
+        <nav>
+            <a href="/">Home</a>
+            <span> | </span>
+            <a href="/Quem_Somos"> Quem Somos</a>
+            <span> | </span>
+            <a href="/Contato"> Contato</a>
+        </nav>
+    </div>
+
+    <!-- Text -->
+    <h1>Entre em contato</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+
+    <!-- textBox -->
+    <span class="textBox">
+        <p>Seu e-mail:</p>
+        <input type="email">
+        <p>Assunto:</p>
+        <input type="text">
+        <p>Descrição:</p>
+        <textarea name="descricao" cols="20" rows="2"></textarea>
+    </span>
+    <!-- Button -->
+    <div>
+        <button>Enviar</button>
+    </div>
+
+    <!-- Rodape -->
+    <p id="baseboard">Todos os direitos reservados</p>
+
+</body>
+
+</html>

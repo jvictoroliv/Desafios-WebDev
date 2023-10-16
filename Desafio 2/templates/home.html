@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body id="home">
+
+    <!-- Header -->
+    <div class="header">
+        <!-- Image -->
+        <img src="{{ url_for('static', filename='logo.png') }}"" alt="Logo">
+        <!-- Links -->
+        <nav>
+            <a href="/">Home</a>
+            <span> | </span>
+            <a href="/Quem_Somos"> Quem Somos</a>
+            <span> | </span>
+            <a href="/Contato"> Contato</a>
+        </nav>
+
+    </div>
+    <!-- cover -->
+    <div class="cover">
+        <img src="{{ url_for('static', filename='capa.png') }}" alt="Tecnologia no seu aprendizado">
+    </div>
+
+    <!-- Text -->
+    <h1>Sobre a universidade</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.</p>
+
+    <!-- Rodape -->
+    <p id="baseboard">Todos os direitos reservados</p>
+
+</body>
+
+</html>
