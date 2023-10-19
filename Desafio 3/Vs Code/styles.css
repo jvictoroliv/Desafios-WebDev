@@ -1,0 +1,18 @@
+.navbar{
+    background-color: #FFFAFF;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Lost Emerald';
+    src: url(./Fonts/Lost-Emerald.ttf);
+    font-weight: regular;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Bebas';
+    src: url(./Fonts/Bebas-Regular.ttf);
+    font-weight: regular;
+    font-size: normal;
+}
