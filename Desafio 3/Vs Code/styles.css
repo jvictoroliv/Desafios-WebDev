@@ -1,5 +1,58 @@
-.navbar{
+footer{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.navbar {
     background-color: #FFFAFF;
+}
+
+#logo {
+    display: flex;
+    width: 600px;
+    justify-content: center;
+
+}
+
+.Centralizar{
+    justify-content: center;
+    align-items: center;
+}
+
+#cover {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
+
+
+#symbol {
+    margin-left: 300px;
+}
+
+#collection {
+    display: flex;
+    min-height: 100px;
+    background: #1E1B18;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    border: 3px solid rebeccapurple;
+    width: 215px;
+    height: 215px;
+    flex-shrink: 0;
+}
+
+.posicao{
+    margin-top: 5%;
+    margin-bottom: 20%;
+}
+
+#footer{
+    margin-bottom: auto;
 }
 
 /* Fonts */
@@ -13,6 +66,13 @@
 @font-face {
     font-family: 'Bebas';
     src: url(./Fonts/Bebas-Regular.ttf);
+    font-weight: regular;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./Fonts/Montserrat-Regular.ttf);
     font-weight: regular;
     font-size: normal;
 }
