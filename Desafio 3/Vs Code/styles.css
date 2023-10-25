@@ -1,4 +1,4 @@
-footer {
+/* footer {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: 0;
@@ -20,19 +20,19 @@ footer {
     align-items: center;
 }
 
-#cover {
+.cover {
     margin-top: 100px;
     width: 100%;
     height: auto;
-}
+} */
 
-#collection {
+/* #collection {
     display: flex;
     min-height: 100px;
     background: #1E1B18;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .products {
     border: 3px solid rebeccapurple;
@@ -41,29 +41,51 @@ footer {
     flex-shrink: 0;
 }
 
-.posicao {
-    margin-top: 5%;
-    margin-bottom: 20%;
+.cover {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
 }
 
-#footer {
-    margin-bottom: auto;
+.navegue {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 7.68px;
 }
+
+.links-navegar {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* .posicao {
+    margin-top: 5%;
+    margin-bottom: 20%;
+} */
 
 .search {
     position: relative;
     left: 50%;
     transition: all 750ms 0ms;
     transform: translateX(-50%);
+    border-radius: 50px;
     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+    max-width: 300px;
 
 }
 
 .search input {
 
-    height: 50px;
+    height: 40px;
     text-indent: 25px;
+    border-radius: 50px;
     border: 2px solid #d6d4d4;
+
 
 
 }
@@ -79,10 +101,10 @@ footer {
 .search button {
 
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: -1px;
+    right: 10px;
     height: 40px;
-    width: 110px;
+    width: 40px;
 
 }
 
