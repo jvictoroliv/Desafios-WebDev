@@ -11,36 +11,40 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="height: 101px; background-color: #FFFAFF">
-        <div class="d-flex container-fluid justify-content-center" class="Centralizar" >
-            <div class="row d-flex cont align-items-center justify-content-center text-decoration-none">
-                <svg class="col" id="symbol" style="margin-top: 40px;" xmlns="http://www.w3.org/2000/svg" width="57" height="45"
-                    viewBox="0 0 57 45" fill="none">
-                    <path
-                        d="M50.5256 11.6C48.9056 5.24001 45.6056 1.40001 40.6256 1.40001C36.8456 1.40001 34.3256 3.62001 34.3256 7.28001C34.3256 18.14 56.9456 18.14 56.9456 32.18C56.9456 39.68 50.6456 44.6 41.2256 44.6C35.1056 44.6 29.4056 42.5 25.8656 38.42L30.4256 33.2C31.9856 39.32 36.1256 43.4 41.5256 43.4C46.1456 43.4 49.0856 40.52 49.0856 36.08C49.0856 23.84 26.4656 25.58 26.4656 11.84C26.4656 5.06001 31.9856 0.140015 40.5656 0.140015C46.5656 0.140015 51.7856 2.54001 55.0856 6.32001L50.5256 11.6Z"
-                        fill="black" />
-                    <path
-                        d="M11.376 42.992H11.616V44H0.768005V42.992H1.00801C2.06401 42.992 2.73601 42.32 2.73601 41.264V12.128C2.73601 11.12 2.06401 10.4 1.00801 10.4H0.768005V9.44H25.488V17.84H24.48L19.536 10.4H11.376C10.368 10.4 9.64801 11.12 9.64801 12.128V27.2H14.592L17.088 24.752H18.048V30.656H17.088L14.592 28.208H9.64801V41.264C9.64801 42.32 10.368 42.992 11.376 42.992Z"
-                        fill="black" />
-                </svg>
-                <h1 class="col"
-                    style="margin-top: 55px; font-family: Lost Emerald; font-size: 48px;color: #000;white-space: nowrap;"
-                    href="#">Final
-                    Stage</h1>
-            </div>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="height: 101px; background-color: #FFFAFF">
+        <div class="d-flex container-fluid">
+            <a href="#" style="text-decoration: none;">
+                <nav class="row d-flex align-items-center justify-content-center">
+                    <svg class="col" xmlns="http://www.w3.org/2000/svg" width="57" height="45" viewBox="0 0 57 45"
+                        fill="none">
+                        <path
+                            d="M50.5256 11.6C48.9056 5.24001 45.6056 1.40001 40.6256 1.40001C36.8456 1.40001 34.3256 3.62001 34.3256 7.28001C34.3256 18.14 56.9456 18.14 56.9456 32.18C56.9456 39.68 50.6456 44.6 41.2256 44.6C35.1056 44.6 29.4056 42.5 25.8656 38.42L30.4256 33.2C31.9856 39.32 36.1256 43.4 41.5256 43.4C46.1456 43.4 49.0856 40.52 49.0856 36.08C49.0856 23.84 26.4656 25.58 26.4656 11.84C26.4656 5.06001 31.9856 0.140015 40.5656 0.140015C46.5656 0.140015 51.7856 2.54001 55.0856 6.32001L50.5256 11.6Z"
+                            fill="black" />
+                        <path
+                            d="M11.376 42.992H11.616V44H0.768005V42.992H1.00801C2.06401 42.992 2.73601 42.32 2.73601 41.264V12.128C2.73601 11.12 2.06401 10.4 1.00801 10.4H0.768005V9.44H25.488V17.84H24.48L19.536 10.4H11.376C10.368 10.4 9.64801 11.12 9.64801 12.128V27.2H14.592L17.088 24.752H18.048V30.656H17.088L14.592 28.208H9.64801V41.264C9.64801 42.32 10.368 42.992 11.376 42.992Z"
+                            fill="black" />
+                    </svg>
+                    <h1 class="col" style="font-family: Lost Emerald; font-size: 48px;color: #000;white-space: nowrap;"
+                        href="#">Final
+                        Stage</h1>
+                </nav>
+            </a>
         </div>
+        <button type="button" data-bs-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" style="color: #000;" href="#">Home</a>
+                    <a href="#" class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #000;white-space: nowrap" href="#">Quem Somos</a>
+                    <a class="nav-link" style="white-space: nowrap" href="#">Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color: #000;margin-right: 50px;" href="#">Contato</a>
+                    <a class="nav-link" style="margin-right: 50px;" href="#">Contato</a>
                 </li>
             </ul>
         </div>
@@ -55,7 +59,7 @@
                 COLEÇÃO</h2>
         </div>
 
-        <div class="container d-flex text-center posicao align-items-center justify-content-center" >
+        <div class="container d-flex text-center posicao align-items-center justify-content-center">
             <div class="row">
                 <div class="col-md-4">
                     <div class="products">
@@ -64,32 +68,38 @@
                     <h3 style="text-align: left;">First Blood</h3>
                     <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     <h3 style="text-align: left; width: 215px;">R$ 399,00
-                        <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 39,90</span></h3>
+                        <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 39,90</span>
+                    </h3>
                 </div>
                 <div class="col-md-4">
                     <div class="products">
                         <img src="" alt="aa">
                     </div>
                     <h3 style="text-align: left;">Next Level</h3>
-                    <p style="text-align: left;width: 215px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="text-align: left;width: 215px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <h3 style="text-align: left; width: 215px;">R$ 799,00
-                        <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 79,90</span></h3>
+                        <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 79,90</span>
+                    </h3>
                 </div>
                 <div class="col-md-4">
                     <div class="products">
                         <img src="" alt="aa">
                     </div>
                     <h3 style="text-align: left;">Hearthsteel</h3>
-                    <p style="text-align: left;width: 215px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style="text-align: left;width: 215px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <h3 style="text-align: left; width: 215px;">R$ 599,00
-                        <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 59,90</span></h3>
+                        <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 59,90</span>
+                    </h3>
                 </div>
             </div>
         </div>
 
         <footer style="background-color: #1E1B18;" id="footer"
             class="d-flex flex-wrap justify-content-between align-items-center py-3">
-            <div class="row d-flex cont align-items-center justify-content-center text-decoration-none" style="margin: 0 auto;">
+            <div class="row d-flex cont align-items-center justify-content-center text-decoration-none"
+                style="margin: 0 auto;">
                 <svg class="col" id="symbol" xmlns="http://www.w3.org/2000/svg" width="57" height="45"
                     viewBox="0 0 57 45" fill="none">
                     <path
@@ -135,11 +145,16 @@
                     </svg></li>
             </ul>
             <div class="d-flex container justify-content-center">
-                <ul class="nav row justify-content-center " >
-                    <li class="col" ><a href="#" class="nav-link px-2 text-body-secondary" style="color: #FFFFFF;">Home</a></li>
-                    <li style="white-space: nowrap" class="col" style="color: #FFFFFF;"><a href="#"
-                            class="nav-link px-3 text-body-secondary" style="color: #FFFFFF;">Quem Somos</a></li>
-                    <li class="col"><a href="#" class="nav-link px-2 text-body-secondary" style="color: #FFFFFF;">Contato</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="white-space: nowrap" href="#">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="margin-right: 50px;" href="#">Contato</a>
+                    </li>
                 </ul>
             </div>
         </footer>
