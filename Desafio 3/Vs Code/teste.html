@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./styles.css">
     <script src="./bootstrap/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
     <script>
         var nav = document.querySelector('.navbar');
         var content = document.querySelector('.content');
@@ -23,6 +26,7 @@
             }
         });
     </script>
+    
 
 </head>
 
@@ -46,7 +50,6 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="search">
-                            <i class="fa fa-search"></i>
                             <input type="text" class="form-control form-input" placeholder="Oque você deseja ?">
                             <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     viewBox="0 0 24 24" fill="none">
@@ -112,40 +115,144 @@
 
     <!-- contetn -->
 
-    <div class="container d-flex text-center posicao align-items-center justify-content-center"
+    <div class="container d-flex posicao align-items-center justify-content-center"
   style="margin-top: 40px;">
-  <div class="row">
-      <div class="col-md-4 mb-4">
-          <div class="products imagem-container">
-              <img src="" alt="aa">
+  <div class="container">
+    <div class="row g4 my-5">
+      <div class="col product-item mx-auto" style="max-width: 360px;">
+        <div class="product-img">
+          <img class="img-fluid d-block mx-auto"
+            src="./static/img/Respawn Royale Product.png" alt="">
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
           </div>
-          <h3 style="text-align: left;">First Blood</h3>
-          <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <h3 style="text-align: left; width: 215px;">R$ 399,00
-              <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 39,90</span>
-          </h3>
-      </div>
-      <div class="col-md-4 mb-4">
-          <div class="products rounded mx-auto d-block imagem-container">
-              <img src="./static/img/Respawn Royale Product.png" alt="aa">
-          </div>
-          <h3 style="text-align: left;">Respawn Royale</h3>
-          <p style="text-align: left;width: 215px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <h3 style="text-align: left; width: 215px;">R$ 799,00
-              <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 79,90</span>
-          </h3>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="products rounded mx-auto d-block imagem-container">
-            <img src="./static/img/Respawn Royale Product.png" alt="aa">
         </div>
-        <h3 style="text-align: left;">Next Level</h3>
-        <p style="text-align: left;width: 215px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-        <h3 style="text-align: left; width: 215px;">R$ 799,00
-            <span style="font-size: 20px;content: \a; white-space: pre; ">OU 10X DE 79,90</span>
+        <div class="product-info p-3">
+          <span class="product-type">Amadeirado</span>
+          <a href="#" class="d-block text-dark text-decoration-none py-2 product-name"><h3>Respawn Royale</h3></a>
+          <h4 style="text-align: left; width: 215px;">R$ 399,00
+            <span style="font-size: 15px;content: \a; white-space: pre; ">OU 10X DE 39,90</span>
         </h3>
+          <div class="rating d-flex mt-1">
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>(25 Reviews)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g4 my-5">
+      <div class="col product-item mx-auto" style="max-width: 360px;">
+        <div class="product-img">
+          <img class="img-fluid d-block mx-auto"
+            src="./static/img/Respawn Royale Product.png" alt="">
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Amadeirado</span>
+          <a href="#" class="d-block text-dark text-decoration-none py-2 product-name"><h3>Respawn Royale</h3></a>
+          <h4 style="text-align: left; width: 215px;">R$ 399,00
+            <span style="font-size: 15px;content: \a; white-space: pre; ">OU 10X DE 39,90</span>
+        </h3>
+          <div class="rating d-flex mt-1">
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>(25 Reviews)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row g4 my-5">
+      <div class="col product-item mx-auto" style="max-width: 360px;">
+        <div class="product-img">
+          <img class="img-fluid d-block mx-auto"
+            src="./static/img/Respawn Royale Product.png" alt="">
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Amadeirado</span>
+          <a href="#" class="d-block text-dark text-decoration-none py-2 product-name"><h3>Respawn Royale</h3></a>
+          <h4 style="text-align: left; width: 215px;">R$ 399,00
+            <span style="font-size: 15px;content: \a; white-space: pre; ">OU 10X DE 39,90</span>
+        </h3>
+          <div class="rating d-flex mt-1">
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>
+              <i class="fa fa-star"></i>
+            </span>
+            <span>(25 Reviews)</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
