@@ -35,7 +35,7 @@
   <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light py-4">
     <div class="container-fluid">
       <a href="#" class="navbar-brand mb-0 h1"
-        style="font-family: Lost Emerald;font-size: 32px;font-style: normal;font-weight: 400;line-height: normal;">
+        style="font-family: Lost Emerald;font-size: 32px;font-style: normal;font-weight: 400;line-height: normal;padding-right: 50px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="30" viewBox="0 0 57 45" fill="none">
           <path
             d="M49.7576 11.46C48.1376 5.1 44.8376 1.26 39.8576 1.26C36.0776 1.26 33.5576 3.48 33.5576 7.14C33.5576 18 56.1776 18 56.1776 32.04C56.1776 39.54 49.8776 44.46 40.4576 44.46C34.3376 44.46 28.6376 42.36 25.0976 38.28L29.6576 33.06C31.2176 39.18 35.3576 43.26 40.7576 43.26C45.3776 43.26 48.3176 40.38 48.3176 35.94C48.3176 23.7 25.6976 25.44 25.6976 11.7C25.6976 4.92 31.2176 0 39.7976 0C45.7976 0 51.0176 2.4 54.3176 6.18L49.7576 11.46Z"
@@ -48,8 +48,8 @@
       </a>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div class="search">
+          <div class="col-md-8">
+            <div class="search d-flex">
               <input type="text" class="form-control form-input" placeholder="Oque você deseja ?">
               <button class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
                   fill="none">
@@ -63,10 +63,13 @@
 
         </div>
       </div>
-      <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class="" style="width: 100%; justify-content: center; display: flex;">
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+            style="margin-top: 10px;" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ms-auto al align-items-center mr-10">
           <li class="nav-item active p-2 g-col-6">
@@ -104,7 +107,7 @@
     </div>
   </nav>
   <!-- cover -->
-  <div class="content">
+  <div>
     <img class="cover" src="./static/img/Respawn Royale.png" alt="Respawn Royale">
   </div>
 
@@ -114,7 +117,7 @@
   </div>
 
   <!-- contetn -->
-  <div class="container d-flex posicao align-items-center justify-content-center" style="margin-top: 40px;">
+  <div class="container d-flex posicao align-items-center justify-content-center" id="responsive" style="margin-top: 40px;">
     <div class="container">
       <div class="row g4 my-5">
         <div class="col product-item mx-auto" style="max-width: 360px;">

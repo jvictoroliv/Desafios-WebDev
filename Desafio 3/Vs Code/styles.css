@@ -3,6 +3,11 @@
     height: auto;
 }
 
+.content {
+    border: 3px solid red;
+    width: 100%;
+}
+
 .navegue {
     font-family: Montserrat;
     font-size: 48px;
@@ -43,8 +48,25 @@
     object-fit: cover;
 }
 
-.product-main{
+.product-main {
     padding-left: 100px;
+
+}
+
+
+@media only screen and (max-width: 400px) {
+    #responsive {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #comprar {
+        margin-top: 20px;
+        width: 60%;
+    }
 }
 
 .newarrival {
@@ -111,12 +133,12 @@
 
 }
 
-.product-img{
+.product-img {
     position: relative;
     overflow: hidden;
 }
 
-.btns{
+.btns {
     position: absolute;
     left: 0;
     bottom: -100%;
@@ -125,43 +147,89 @@
     transition: all 0.3s ease-in-out;
 }
 
-.btns button{
+.btns button {
     border: none;
     background-color: rgb(39, 39, 39);
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
-.btns button:hover{
+.btns button:hover {
     color: #0c50bd;
 }
 
-.product-img:hover .btns{
+.product-img:hover .btns {
     bottom: 0;
 }
 
-.heart-icon{
+.heart-icon {
     position: absolute;
     top: 16px;
     right: 15px;
     font-size: 18px;
 }
 
-.product-type{
+.product-type {
     font-size: 13px;
     opacity: 0.8;
 }
 
-.product-name{
+.product-name {
     transition: all 0.3s ease-in-out;
 }
 
-.product-name:hover{
-    color: #0c50bd! important;
+.product-name:hover {
+    color: #0c50bd ! important;
 }
 
-.rating{
+.rating {
     font-size: 13px;
+}
+
+*,
+::after,
+::befor {
+    box-sizing: border-box;
+}
+
+.quantity {
+    width: 200px;
+    height: 50px;
+    background-color: #edeefa;
+    padding: 0px;
+    display: inline-flex;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.bnt-quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: large;
+    background: 0 0;
+    color: #000;
+    cursor: pointer;
+}
+
+#qtyInput {
+    width: 100%;
+    border: none;
+    font-size: large;
+    text-align: center;
+    color: #000;
+    background: 0 0;
+    flex: 1;
+    font-weight: 700;
+}
+
+#qtyInput:focus-visible{
+    outline:none
 }
 
 /* Fonts */
