@@ -110,12 +110,12 @@
         </div>
     </nav>
     <!-- product -->
-    <div class="container-fluid" style="border: 3px solid red;">
+    <div class="container-fluid" style="padding-top: 5%; padding-bottom: 5%;">
         <div class="row">
             <div class="col-md-5 imagem-container-product">
                 <img src="./static/img/Respawn Royale Product.png" alt="">
             </div>
-            <div class="col-md-7 product-main container-fluid">
+            <div class="col-md-7 product-main container-fluid" id="centralizar">
                 <p class="newarrival text-center">NOVIDADE !</p>
                 <h2>Respawn Royale</h2>
                 <p>Product Code: ISCR2018</p>
@@ -133,19 +133,35 @@
                             <i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
-
-                    <div class="col-6 justify-content-center align-items-center" class="comprar" style="margin-left: 120px;">
-                        <button type="button" class="btn btn-default cart">ADCIONAR À SACOLA</button>
-                        <p class="justify-content-end justify-content-center text-muted"
-                            style="display: flex;font-weight: bold;">Adicionar a wishlist</p>
+                    <div class="col-6 justify-content-center align-items-center" id="comprar">
+                        <span id="centralizar">
+                            <button id="buybutton" type="button" class="btn btn-default cart"
+                                style="white-space: nowrap;">ADCIONAR À SACOLA</button>
+                            <p id="wishlist"
+                                class="justify-content-end justify-content-center text-muted align-items-center justify-content-between"
+                                style="font-weight: bold; margin: 0 20% 0 20%; white-space: nowrap; ;"> <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                </svg>Adicionar a wishlist</p>
+                        </span>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     </div>
+    <div id="CEPTotal" class="CEPClass">
+        <p style="font-family: inter; font-weight: bold; white-space: nowrap;">CALCULE O FRETE</p>
+        <div class="inputCEP d-flex ">
+            <input type="text" class="input" placeholder="Digite o CEP">
+            <button type="button" class="btn-default CEP" id="CEPButton">CALCULAR</button>
+        </div>
+    </div>
+
+
+    <h3 style="padding-left: 80px; margin-top: -30PX; font-family: inter; font-weight: bold;">DESCRIÇÃO</h3>
+    <p style="padding-left: 80px; padding-right: 80px;padding-bottom: 100px;">Descubra a essência do sucesso com Respawn Royale, o perfume amadeirado que o levará para uma jornada única de elegância e sofisticação. Nossa fragrância é uma fusão harmoniosa de notas amadeiradas que evoca a sensação de poder e confiança.<br><br>Experimente o aroma irresistível de Respawn Royale e mergulhe em um mundo de luxo e sedução. Sinta-se pronto para enfrentar qualquer desafio com Respawn Royale - a fragrância dos vencedores.</p>
 
 
 
@@ -210,21 +226,21 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 links-navegar" style="color: white;">Pricing</a></li>
         </ul>
     </footer>
-<script>
-    let qty = document.querySelector("#qtyInput");
+    <script>
+        let qty = document.querySelector("#qtyInput");
 
-    function decrement(){
-        if(qty.value<=1){
-            qty.value = 1;
-        }else{
-            qty.value = parseInt(qty.value) -1;
+        function decrement() {
+            if (qty.value <= 1) {
+                qty.value = 1;
+            } else {
+                qty.value = parseInt(qty.value) - 1;
+            }
         }
-    }
 
-    function increment(){
-        qty.value = parseInt(qty.value) +1;
-    }
-</script>
+        function increment() {
+            qty.value = parseInt(qty.value) + 1;
+        }
+    </script>
 
 
 </body>

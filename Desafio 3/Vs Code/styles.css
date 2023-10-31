@@ -53,6 +53,10 @@
 
 }
 
+#comprar {
+    padding-left: 100px;
+}
+
 
 @media only screen and (max-width: 400px) {
     #responsive {
@@ -64,8 +68,53 @@
 
 @media only screen and (max-width: 500px) {
     #comprar {
-        margin-top: 20px;
-        width: 60%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-left: -175px;
+        padding: 100px;
+
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #centralizar {
+        padding: left;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #buybutton {
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #wishlist {
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #CEPTotal {
+        margin: auto;
+        padding-left: 15%;
+        margin-top: -100px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #CEPButton {
+        position: relative;
+        left: -40px;
     }
 }
 
@@ -92,6 +141,22 @@
     font-size: 24px;
 }
 
+.CEP {
+    background: #1E1B18;
+    border: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    font-family: Inter;
+    font-weight: regular;
+    font-weight: 100;
+    left: 775px;
+    border-radius: 15px 15px 15px 15px;
+}
+
 .search {
     position: relative;
     left: 50%;
@@ -101,7 +166,25 @@
     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
     max-width: 600px;
     min-width: 250px;
+}
 
+.inputCEP {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputCEP input {
+    height: 40px;
+    text-indent: 25px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #1E1B18;
+}
+
+.CEPClass {
+    margin-left: 600px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin-top: -50px;
 }
 
 .search input {
@@ -110,17 +193,12 @@
     text-indent: 25px;
     border-radius: 50px;
     border: 2px solid #d6d4d4;
-
-
-
 }
 
 .search .fa-search {
-
     position: absolute;
     top: 20px;
     left: 16px;
-
 }
 
 .search button {
@@ -228,8 +306,8 @@
     font-weight: 700;
 }
 
-#qtyInput:focus-visible{
-    outline:none
+#qtyInput:focus-visible {
+    outline: none
 }
 
 /* Fonts */
@@ -258,5 +336,12 @@
     font-family: 'Inter';
     src: url(./Fonts/Inter-Bold.ttf);
     font-weight: bold;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./Fonts/Inter-Regular.ttf);
+    font-weight: regular;
     font-size: normal;
 }
