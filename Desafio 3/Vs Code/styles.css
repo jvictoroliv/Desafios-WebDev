@@ -1,22 +1,13 @@
-.cover {
-    width: 100%;
-    height: auto;
+/* GENERAL */
+
+/* Page Size */
+*,
+::after,
+::befor {
+    box-sizing: border-box;
 }
 
-.content {
-    border: 3px solid red;
-    width: 100%;
-}
-
-.navegue {
-    font-family: Montserrat;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 7.68px;
-}
-
+/* Nav Links Footer and Navbar */
 .links-navegar {
     font-family: Montserrat;
     font-style: normal;
@@ -24,254 +15,7 @@
     line-height: normal;
 }
 
-.imagem-container {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-}
-
-.imagem-container-product {
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-}
-
-.imagem-container-product img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.imagem-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.bg-img-1{
-    background-image: url(./static/img/Respawn\ Royale.png);
-    background-position: 48% 75%;
-}
-
-.bg-img-2{
-    background-image: url(./static/img/Epic\ Victory.png);
-    background-position: 90% 75%;
-}
-
-.bg-img-3{
-    background-image: url(./static/img/Infinite\ Quest.png);
-    background-position: 22% 75%;
-}
-
-
-.cover-responsive {
-    height: 75vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#productImage {
-    margin-left: 5%;
-}
-
-#productBuy {
-    margin-left: 3%;
-}
-
-#QTD {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-}
-
-#Num {
-    display: flex;
-    flex-direction: column;
-}
-
-#Price {
-    display: flex;
-}
-
-#comprar {
-    padding-left: 100px;
-}
-
-
-@media only screen and (max-width: 400px) {
-    #responsive {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #productImage {
-        margin: auto;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #productBuy {
-        margin-left: 0px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #comprar {
-        display: flex;
-        justify-content: center;
-        margin-left: -175px;
-        padding: 100px;
-
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #buybutton {
-        display: block;
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #wishlist {
-        display: block;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #Sacola {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 15%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #CEPTotal {
-        justify-content: center;
-        margin: auto;
-        margin-top: -100px;
-        padding-top: 30%;
-        padding-bottom: 20%;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #Num {
-        display: flex;
-        justify-content: center;
-        padding: 10%;
-
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #Price {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
-
-
-
-@media only screen and (max-width: 500px) {
-    .inputCEP {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #productImage {
-        width: 90vw;
-        padding-bottom: 10%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .CalcFrete {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #QTD {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        justify-items: center;
-        align-items: center;
-
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #cover-img {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        object-fit: cover;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .EpicVictory {
-        right: 100px;
-    }
-}
-
-
-.newarrival {
-    background-color: black;
-    width: 100px;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.price-product-page {
-    font-family: Inter;
-    font-weight: bold;
-    color: #555;
-    font-size: 26px;
-    font-weight: bold;
-    padding-top: 20px;
-}
-
-.cart {
-    background: #C00;
-    color: white;
-    font-size: 24px;
-}
-
-.CEP {
-    background: #1E1B18;
-    border: none;
-    color: white;
-    font-size: 20px;
-    height: 40px;
-    width: 150px;
-    text-align: center;
-    font-family: Inter;
-    font-weight: regular;
-    font-weight: 100;
-    margin-left: -30px;
-    border-radius: 15px 15px 15px 15px;
-}
-
+/* Search Bar */
 .search {
     position: relative;
     left: 50%;
@@ -283,18 +27,6 @@
     min-width: 250px;
 }
 
-.inputCEP {
-    display: flex;
-    align-items: center;
-}
-
-.inputCEP input {
-    height: 40px;
-    text-indent: 25px;
-    border-radius: 10px 0 0 10px;
-    border: 2px solid #1E1B18;
-}
-
 .search input {
 
     height: 40px;
@@ -303,25 +35,67 @@
     border: 2px solid #d6d4d4;
 }
 
+.search button {
+    position: absolute;
+    top: -1px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+
 .search .fa-search {
     position: absolute;
     top: 20px;
     left: 16px;
 }
 
-.search button {
 
-    position: absolute;
-    top: -1px;
-    right: 10px;
-    height: 40px;
-    width: 40px;
 
+/* Home */
+/* Carousel */
+.bg-img-1 {
+    background-image: url(./static/img/Respawn\ Royale.png);
+    background-position: 48% 75%;
 }
 
+.bg-img-2 {
+    background-image: url(./static/img/Epic\ Victory.png);
+    background-position: 90% 75%;
+}
+
+.bg-img-3 {
+    background-image: url(./static/img/Infinite\ Quest.png);
+    background-position: 22% 75%;
+}
+
+.cover-responsive {
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Collection */
+.navegue {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 7.68px;
+}
+
+/* Products */
 .product-img {
     position: relative;
     overflow: hidden;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    font-size: 18px;
 }
 
 .btns {
@@ -348,13 +122,6 @@
     bottom: 0;
 }
 
-.heart-icon {
-    position: absolute;
-    top: 16px;
-    right: 15px;
-    font-size: 18px;
-}
-
 .product-type {
     font-size: 13px;
     opacity: 0.8;
@@ -372,10 +139,59 @@
     font-size: 13px;
 }
 
-*,
-::after,
-::befor {
-    box-sizing: border-box;
+
+
+/* Products Page */
+
+/* Product Img */
+.imagem-container-product {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.imagem-container-product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-left: 5vw;
+}
+
+/* NewArrival */
+.newarrival {
+    background-color: black;
+    width: 100px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Product Price */
+.price-product-page {
+    font-family: Inter;
+    font-weight: bold;
+    color: #555;
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* Product num & Buy Button */
+#QTD {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.cart {
+    background: #C00;
+    color: white;
+    font-size: 24px;
+}
+
+.cart:hover{
+    background-color: rgb(148, 9, 9);
+    color: white;
 }
 
 .quantity {
@@ -417,6 +233,138 @@
 #qtyInput:focus-visible {
     outline: none
 }
+
+/* CEP Input */
+.CEP {
+    background: #1E1B18;
+    border: none;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    font-family: Inter;
+    font-weight: regular;
+    font-weight: 100;
+    margin-left: -30px;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.inputCEP {
+    display: flex;
+    align-items: center;
+}
+
+.inputCEP input {
+    height: 40px;
+    text-indent: 25px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #1E1B18;
+}
+
+#Price {
+    display: flex;
+}
+
+
+
+
+
+
+/* @Media */
+@media only screen and (max-width: 500px) {
+
+    /* Home */
+    #responsive {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
+
+/* Product Page */
+
+    /* Product Infor General */
+    #Price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Product Img */
+    #productImage {
+        width: 90vw;
+        padding-bottom: 10%;
+        margin: auto;
+    }
+
+    /* Product num & Buy Button */
+    #QTD {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #Sacola {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10vh;
+    }
+    
+    #wishlist {
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    #buybutton {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #productBuy {
+        margin-left: 0px;
+        width: 50%;
+    }
+
+    /* CEP Input */
+    .CalcFrete {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .inputCEP {
+        display: flex;
+        justify-content: center;
+    }
+
+    #CEPTotal {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: -100px;
+        padding-top: 30%;
+        padding-bottom: 20%;
+        width: 100%;
+    }
+
+
+}
+
+
+
+
 
 /* Fonts */
 @font-face {
