@@ -1,0 +1,120 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+
+<script>
+    var nav = document.querySelector('.navbar');
+    var content = document.querySelector('.content');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset >= 100) { // Ajuste este valor para corresponder à altura da sua barra de navegação
+            nav.classList.add('sticky-top');
+            content.style.paddingTop = nav.offsetHeight + 'px';
+        } else {
+            nav.classList.remove('sticky-top');
+            content.style.paddingTop = '100px'; // Ou qualquer valor que você desejar
+        }
+    });
+</script>
+
+
+<!-- product -->
+<div class="container-fluid" style="padding-top: 5%; padding-bottom: 5%;">
+    <div class="row">
+        <span id="Price">
+            <div class="col-md-5 imagem-container-product" id="productImage">
+                <img src="static\img\Mystic Odyssey Product.jpg" alt="Mystic Odyssey">
+            </div>
+            <div class="col-md-7 container-fluid" id="productBuy">
+                <p class="newarrival text-center">NOVIDADE !</p>
+                <h2>Mystic Odyssey</h2>
+                <p style="white-space: nowrap;">Product Code: ISCR2018</p>
+                <p style="text-align: left; width: 215px; font-size: 30px;" class="price-product-page">R$ 299,00
+                    <span style="font-size: 20px;content: \n; white-space: pre; ">OU 10X DE 29,90</span>
+                </p>
+                <div class="row">
+                    <div id="QTD">
+                        <div style="padding-bottom: 5vh;">
+                            <div class="col justify-content-center">
+                                <p style="padding-left: 50px; max-width: 100px;">QTD</p>
+                                <div class="quantity col-5" style="width: 150px;">
+                                    <button class="bnt-quantity minus" type="button" onclick="decrement()">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    <input type="text" value="1" data-product-quantity="1" id="qtyInput">
+                                    <button class="bnt-quantity plus" type="button" onclick="increment()">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex" id="Sacola">
+                            <div>
+                                <div>
+                                    <button id="buybutton" type="button" class="btn btn-default cart"
+                                        style="white-space: nowrap;">ADCIONAR
+                                        À SACOLA</button>
+                                </div>
+                                <p class="text-muted" id="wishlist"
+                                    style="font-weight: bold; margin: 0 20% 0 20%; white-space: nowrap;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                    </svg>Adicionar a wishlist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="CEPTotal">
+                        <p class="CalcFrete" style="font-family: inter; font-weight: bold; white-space: nowrap;">CALCULE
+                            O FRETE</p>
+                        <div class="inputCEP ">
+                            <input type="text" class="input" placeholder="Digite o CEP">
+                            <button type="button" class="btn-default CEP" id="CEPButton">CALCULAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+
+    </div>
+</div>
+
+
+<h3 style="padding-left: 80px; margin-top: -30PX; font-family: inter; font-weight: bold;">DESCRIÇÃO</h3>
+<p style="padding-left: 80px; padding-right: 80px;padding-bottom: 100px; font-size: large;">"Mystic Odyssey" é um
+    perfume que convida você a explorar um mundo de mistério e aventura, inspirado pelas gírias e emoções dos jogos.
+    Esta fragrância única transporta você para um reino encantado, onde a magia e a ousadia se fundem para criar uma
+    experiência olfativa cativante. Com notas de fragrância que evocam a sensação de magia e poder, "Mystic Odyssey" é a
+    escolha perfeita para quem busca um aroma que inspire a jornada épica da vida.<br><br>A fragrância de "Mystic
+    Odyssey" é uma jornada sensorial que evoca a mística e a profundidade do cosmos. Iniciando com notas cítricas
+    refrescantes de bergamota e limão, ela desperta os sentidos com um toque de vitalidade. No coração, as especiarias
+    exóticas e misteriosas acrescentam uma camada de calor e energia à fragrância. As notas de madeiras celestiais no
+    fundo proporcionam uma sensação duradoura de força e mistério, fazendo com que essa fragrância seja ideal para
+    aqueles que buscam uma experiência única, lembrando uma jornada pelo espaço sideral.</p>
+
+<script>
+    // Adicione um ouvinte de evento ao botão "ADCIONAR À SACOLA"
+    document.getElementById("buybutton").addEventListener("click", function () {
+        var productName = this.getAttribute("data-product-name");
+        var productPrice = parseFloat(this.getAttribute("data-product-price"));
+        var productImage = this.getAttribute("data-product-image");
+        var productLink = this.getAttribute("data-product-link");
+        var quantity = parseInt(document.getElementById("qtyInput").value);
+
+        // Chame a função para adicionar o item ao carrinho
+        adicionarAoCarrinho(productName, productPrice, productImage, productLink, quantity);
+    });
+</script>
+
+
+
+
+
+
+
+{% endblock %}

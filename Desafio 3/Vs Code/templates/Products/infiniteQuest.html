@@ -1,0 +1,98 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+
+<script>
+    var nav = document.querySelector('.navbar');
+    var content = document.querySelector('.content');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset >= 100) { // Ajuste este valor para corresponder à altura da sua barra de navegação
+            nav.classList.add('sticky-top');
+            content.style.paddingTop = nav.offsetHeight + 'px';
+        } else {
+            nav.classList.remove('sticky-top');
+            content.style.paddingTop = '100px'; // Ou qualquer valor que você desejar
+        }
+    });
+</script>
+
+
+<!-- product -->
+<div class="container-fluid" style="padding-top: 5%; padding-bottom: 5%;">
+    <div class="row">
+        <span id="Price">
+            <div class="col-md-5 imagem-container-product" id="productImage">
+                <img src="static\img\Infinete quest product.png" alt="Infinite Quest">
+            </div>
+            <div class="col-md-7 container-fluid" id="productBuy">
+                <p class="newarrival text-center">NOVIDADE !</p>
+                <h2>Infinite Quest</h2>
+                <p style="white-space: nowrap;">Product Code: ISCR2018</p>
+                <p style="text-align: left; width: 215px; font-size: 30px;" class="price-product-page">R$ 399,00
+                    <span style="font-size: 20px;content: \n; white-space: pre; ">OU 10X DE 39,90</span>
+                </p>
+                <div class="row">
+                    <div id="QTD">
+                        <div style="padding-bottom: 5vh;">
+                            <div class="col justify-content-center">
+                                <p style="padding-left: 50px; max-width: 100px;">QTD</p>
+                                <div class="quantity col-5" style="width: 150px;">
+                                    <button class="bnt-quantity minus" type="button" onclick="decrement()">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </button>
+                                    <input type="text" value="1" data-product-quantity="1" id="qtyInput">
+                                    <button class="bnt-quantity plus" type="button" onclick="increment()">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex" id="Sacola">
+                            <div>
+                                <div>
+                                    <button id="buybutton" type="button" class="btn btn-default cart"
+                                        style="white-space: nowrap;">ADCIONAR
+                                        À SACOLA</button>
+                                </div>
+                                <p class="text-muted" id="wishlist"
+                                    style="font-weight: bold; margin: 0 20% 0 20%; white-space: nowrap;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                                    </svg>Adicionar a wishlist
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="CEPTotal">
+                        <p class="CalcFrete" style="font-family: inter; font-weight: bold; white-space: nowrap;">CALCULE
+                            O FRETE</p>
+                        <div class="inputCEP ">
+                            <input type="text" class="input" placeholder="Digite o CEP">
+                            <button type="button" class="btn-default CEP" id="CEPButton">CALCULAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </span>
+
+    </div>
+</div>
+
+
+<h3 style="padding-left: 80px; margin-top: -30PX; font-family: inter; font-weight: bold;">DESCRIÇÃO</h3>
+<p style="padding-left: 80px; padding-right: 80px;padding-bottom: 100px; font-size: large;">"Infinite Quest" é uma
+    fragrância cativante da Final Stage, projetada para levar você a uma jornada olfativa única e inspiradora. Essa
+    fragrância exclusiva é um testemunho do nosso compromisso em criar perfumes que transcendem a simples essência,
+    abraçando a complexidade da vida.<br><br>As notas de fragrância do "Infinite Quest" são uma mescla de frescor
+    revigorante e profundidade misteriosa. Ela se inicia com uma explosão cítrica de bergamota e limão, evocando a
+    energia e a vitalidade para enfrentar novos desafios. No coração, flores de jasmim e rosa revelam uma suavidade e
+    sofisticação, enquanto no fundo, a base de âmbar e madeira oferece uma sensação duradoura de força e mistério. Essa
+    combinação única de notas cria uma fragrância que é simultaneamente refrescante e envolvente, tornando-a ideal para
+    pessoas que buscam aventuras infinitas.</p>
+{% endblock %}

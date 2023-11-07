@@ -1,0 +1,98 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h1>Informe seus dados, por favor</h1>
+    <hr>
+    <form>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <fieldset class="row">
+                    <legend>Dados Pessoais</legend>
+                    <div class="mb-3">
+                        <label for="txtNome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="txtNome">
+                    </div>
+                    <div class="mb-3 col-md-6 col-xl-4">
+                        <label for="txtCPF" class="form-label">CPF</label>
+                        <span class="form-text">(Somente Números)</span>
+                        <input type="text" class="form-control" id="txtCPF">
+                    </div>
+                    <div class="mb-3 col-md-6 col-xl-4">
+                        <label for="txtDataNascimento" class="form-label">Data de Nascimento</label>
+                        <input type="date" class="form-control" id="txtDataNascimento">
+                    </div>
+                </fieldset>
+                <fieldset class="row">
+                    <legend>Contatos</legend>
+                    <div class="mb-3 col-md-8">
+                        <label for="txtEmail" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="txtEmail">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="txtTelefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="txtTelefone" placeholder="12999999999">
+                        <span class="form-text">(Com DDD, somente números)</span>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <fieldset class="row">
+                    <legend>Endereço</legend>
+                    <div class="mb-3 col-md-6 col-lg-4">
+                        <label for="txtCEP" class="form-label">CEP</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="txtCEP">
+                            <span class="input-group-text p-1">
+                                <i class="bi bi-hourglass-split" width="24" height="24" fill="currentColor"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-md-6 col-lg-8 align-self-end">
+                        <textarea class="form-control text-muted bg-light"
+                            style="height: 68px;">Digite o CEP para buscarmos o endereço</textarea>
+                    </div>
+                    <div class="mb-3 col-md-4">
+                        <label for="txtNumero" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="txtNumero">
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="txtComplemento" class="form-label">Complemento</label>
+                        <input type="text" class="form-control" id="txtComplemento">
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="txtReferencia" class="form-label">Referência</label>
+                        <input type="text" class="form-control" id="txtReferencia">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Senha de Acesso</legend>
+                    <div class="mb-3 col-md-8">
+                        <label for="txtSenha" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="txtSenha">
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="txtConfSenha" class="form-label">Confirmação da Senha</label>
+                        <input type="password" class="form-control" id="txtConfSenha">
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <hr>
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" value="" id="chkPromocoes">
+            <label for="chkPromocoes" class="form-check-label">Desejo receber informações sobre promoções.</label>
+        </div>
+        <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" value="" id="chkTermos">
+            <label for="chkTermos" class="form-check-label">Concordo com os termos de uso</label>
+        </div>
+        <div class="mb-3 justify-content-end d-flex">
+            <a href="/" class="btn btn-light btn-outline-danger" style="margin-right: 20px;">Cancelar</a>
+            <input type="button" value="Criar meu cadastro" class="btn btn-default register"  onclick="windows.location.href='/confCadastro'">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

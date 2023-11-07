@@ -1,0 +1,44 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center mt-3">
+        <form class="col-sm-10 col-md-8 col-lg-6">
+            <h1 class="mb-3"><span><a href="/"><i class="bi bi-arrow-bar-left" style="color: black;"></a></i></span>Faça
+                Login</h1>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" autofocus id="txtEmail" placeholder=" ">
+                <label for="txtEmail">E-mail</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" autofocus id="txtSenha" placeholder=" ">
+                <label for="txtSenha">Senha</label>
+            </div>
+
+            <div class="form-check mb-3 d-flex" style="justify-content: space-between;">
+                <div>
+                    <input type="checkbox" class="form-check-input" value="" id="chkLembrar">
+                    <label for="chkLembrar" class="form-check-label">Manter logado</label>
+                </div>
+                <a href="/RecupSenha" class="text-muted" style=" color: black; display: flex;">Esqueceu a senha ?</a>
+            </div>
+
+            <div class="row container justify-content-center">
+                <div class="col-md-4 order-md-2 longin">
+                    <button class="btn btn-lg" type="button"
+                        style="background: #1E1B18; color: white; border-radius: 30px;max-width: 250px; min-width: 175px; font-weight: 600; font-family: Inter;">ENTRAR</button>
+                </div>
+                <div class="col-md-4 order-md-5 register-login-container">
+                    <a href="/Cadastro" class="btn btn-lg register-login"
+                        style="border: 3px solid #1E1B18; font-size: 20px; font-weight: 600; font-family: Inter; border-radius: 30px;white-space: nowrap;">CADASTRAR-SE</a>
+                </div>
+            </div>
+
+            <p class="mt-3"></p>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

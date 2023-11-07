@@ -4,37 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final Stage</title>
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./bootstrap/js/bootstrap.js"></script>
+  <title>{{titulo}}</title>
+  <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../static/styles.css">
+  <script src="../static/bootstrap/js/bootstrap.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<script>
-  var nav = document.querySelector('.navbar');
-  var content = document.querySelector('.content');
-
-  window.addEventListener('scroll', function () {
-    if (window.pageYOffset >= 100) { // Ajuste este valor para corresponder à altura da sua barra de navegação
-      nav.classList.add('sticky-top');
-      content.style.paddingTop = nav.offsetHeight + 'px';
-    } else {
-      nav.classList.remove('sticky-top');
-      content.style.paddingTop = '100px'; // Ou qualquer valor que você desejar
-    }
-  });
-</script>
-
-
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <script src="../static/shared.js"></script>
 </head>
 
 <body style="min-width: 372px;">
   <!-- navbar -->
   <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light py-4">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand mb-0 h1"
+      <!-- Logo -->
+      <a href="/" class="navbar-brand mb-0 h1"
         style="font-family: Lost Emerald;font-size: 32px;font-style: normal;font-weight: 400;line-height: normal;padding-right: 50px;">
         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="30" viewBox="0 0 57 45" fill="none">
           <path
@@ -46,6 +33,7 @@
         </svg>
         Final Stage
       </a>
+      <!-- Search Bar -->
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -58,35 +46,34 @@
                     stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg></button>
             </div>
-
           </div>
-
         </div>
       </div>
-      <div class="" style="width: 100%; justify-content: center; display: flex;">
+      <!-- Navbar Toggle Button -->
+      <div style="width: 100%; justify-content: center; display: flex;">
         <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
-            style="margin-top: 10px;" aria-controls="navbarNav" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          style="margin-top: 10px;" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
+      </div>
+      <!-- Navbar Links -->
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ms-auto al align-items-center mr-10">
           <li class="nav-item active p-2 g-col-6">
-            <a href="#" class="nav-link active links-navegar">
+            <a href="/" class="nav-link {{activehome}} links-navegar">
               Home
             </a>
           </li>
           <li class="nav-item active p-2 g-col-6">
-            <a href="#" class="nav-link links-navegar" style="white-space: nowrap">
+            <a href="/QuemSomos" class="nav-link {{activesomos}}  links-navegar" style="white-space: nowrap">
               Quem Somos
             </a>
           <li class="nav-item active p-2 g-col-6">
-            <a href="#" class="nav-link links-navegar">
+            <a href="/Contato" class="nav-link {{activecontato}}  links-navegar">
               Contato
             </a>
           <li class="nav-item active p-2 g-col-6">
-            <a href="#" class="nav-link">
+            <a href="/Login" class="nav-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 28 28" fill="none">
                 <path
                   d="M14 0C6.28075 0 0 6.28075 0 14C0 18.1364 1.80483 21.8587 4.66667 24.4236V24.4335L4.86967 24.6085C4.90525 24.6394 4.94433 24.6651 4.9805 24.6954C5.56408 25.1875 6.18615 25.6321 6.84075 26.0248C6.89033 26.0546 6.94108 26.0826 6.99067 26.1112C7.31558 26.3002 7.6475 26.4781 7.98817 26.6408L7.99867 26.6455C8.7336 26.9949 9.49778 27.2791 10.2824 27.4948L10.3262 27.5071C10.7001 27.6092 11.0804 27.6949 11.466 27.7655L11.5739 27.7847C11.9487 27.8509 12.3261 27.9019 12.705 27.9376C12.7487 27.9417 12.7925 27.944 12.8357 27.9475C13.2201 27.9796 13.6074 28 14 28C14.3926 28 14.7799 27.9796 15.1643 27.9475C15.2081 27.944 15.2518 27.9417 15.295 27.9376C15.6771 27.9026 16.0539 27.8501 16.4261 27.7847L16.534 27.7655C16.9175 27.6956 17.2977 27.6094 17.6738 27.5071L17.7176 27.4948C18.5022 27.2791 19.2664 26.9949 20.0013 26.6455L20.0118 26.6408C20.3512 26.4776 20.684 26.3009 21.0093 26.1112C21.0595 26.082 21.1097 26.0546 21.1592 26.0248C21.4552 25.8473 21.7445 25.659 22.0267 25.4602C22.099 25.4094 22.1713 25.3587 22.2431 25.3062C22.5091 25.1113 22.7681 24.9077 23.0195 24.6954C23.0557 24.6651 23.0947 24.6394 23.1303 24.6085L23.3333 24.4335V24.4236C26.1952 21.8581 28 18.1364 28 14C28 6.28075 21.7192 0 14 0ZM14 14C11.4269 14 9.33333 11.9064 9.33333 9.33333C9.33333 6.76025 11.4269 4.66667 14 4.66667C16.5731 4.66667 18.6667 6.76025 18.6667 9.33333C18.6667 11.9064 16.5731 14 14 14ZM15.75 15.1667C19.2879 15.1667 22.1667 18.0454 22.1667 21.5833V23.8922C22.1422 23.9126 22.1165 23.9312 22.092 23.9517C21.8616 24.1389 21.6253 24.3168 21.3838 24.4872C21.3302 24.5251 21.2777 24.5642 21.224 24.6009C20.9632 24.7788 20.6955 24.9457 20.4231 25.1037L20.2732 25.1901C19.0276 25.8919 17.6725 26.3786 16.2651 26.6297L16.1653 26.6478C15.8337 26.7045 15.5 26.7483 15.1649 26.7791C15.1188 26.7832 15.0722 26.7861 15.0255 26.7896C14.6854 26.8158 14.3436 26.8333 14 26.8333C13.6564 26.8333 13.3146 26.8158 12.9745 26.7884L12.8351 26.7779C12.4664 26.7442 12.0993 26.6944 11.7349 26.6286C10.686 26.4398 9.66474 26.1212 8.69458 25.6801L8.60067 25.6375C8.25149 25.4748 7.90989 25.2963 7.57692 25.1026C7.3045 24.9451 7.03675 24.7777 6.776 24.5997C6.72175 24.563 6.66925 24.5239 6.61617 24.486C6.37396 24.3158 6.13776 24.1372 5.908 23.9505C5.8835 23.9307 5.85783 23.9114 5.83333 23.891V21.5833C5.83333 18.0454 8.71208 15.1667 12.25 15.1667H15.75ZM23.3333 22.7943V21.5833C23.3333 17.9252 20.7293 14.8639 17.2783 14.1546C18.0651 13.6203 18.7092 12.9016 19.1546 12.0613C19.5999 11.2209 19.8329 10.2844 19.8333 9.33333C19.8333 6.11683 17.2165 3.5 14 3.5C10.7835 3.5 8.16667 6.11683 8.16667 9.33333C8.16707 10.2844 8.4001 11.2209 8.84544 12.0613C9.29077 12.9016 9.9349 13.6203 10.7217 14.1546C7.27067 14.8639 4.66667 17.9252 4.66667 21.5833V22.7943C2.499 20.4954 1.16667 17.4014 1.16667 14C1.16667 6.92358 6.92358 1.16667 14 1.16667C21.0764 1.16667 26.8333 6.92358 26.8333 14C26.8333 17.4014 25.501 20.4954 23.3333 22.7943Z"
@@ -94,7 +81,7 @@
               </svg>
             </a>
           <li class="nav-item active p-2 g-col-6">
-            <a href="#" class="nav-link">
+            <a href="/Carrinho" class="nav-link">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 32 32" fill="none">
                 <path
                   d="M27 5.25H5C4.53587 5.25 4.09075 5.43437 3.76256 5.76256C3.43437 6.09075 3.25 6.53587 3.25 7V25C3.25 25.4641 3.43437 25.9092 3.76256 26.2374C4.09075 26.5656 4.53587 26.75 5 26.75H27C27.4641 26.75 27.9092 26.5656 28.2374 26.2374C28.5656 25.9092 28.75 25.4641 28.75 25V7C28.75 6.53587 28.5656 6.09075 28.2374 5.76256C27.9092 5.43437 27.4641 5.25 27 5.25ZM27.25 25C27.25 25.0663 27.2237 25.1299 27.1768 25.1768C27.1299 25.2237 27.0663 25.25 27 25.25H5C4.9337 25.25 4.87011 25.2237 4.82322 25.1768C4.77634 25.1299 4.75 25.0663 4.75 25V7C4.75 6.9337 4.77634 6.87011 4.82322 6.82322C4.87011 6.77634 4.9337 6.75 5 6.75H27C27.0663 6.75 27.1299 6.77634 27.1768 6.82322C27.2237 6.87011 27.25 6.9337 27.25 7V25ZM21.75 11C21.75 12.525 21.1442 13.9875 20.0659 15.0659C18.9875 16.1442 17.525 16.75 16 16.75C14.475 16.75 13.0125 16.1442 11.9341 15.0659C10.8558 13.9875 10.25 12.525 10.25 11C10.25 10.8011 10.329 10.6103 10.4697 10.4697C10.6103 10.329 10.8011 10.25 11 10.25C11.1989 10.25 11.3897 10.329 11.5303 10.4697C11.671 10.6103 11.75 10.8011 11.75 11C11.75 12.1272 12.1978 13.2082 12.9948 14.0052C13.7918 14.8022 14.8728 15.25 16 15.25C17.1272 15.25 18.2082 14.8022 19.0052 14.0052C19.8022 13.2082 20.25 12.1272 20.25 11C20.25 10.8011 20.329 10.6103 20.4697 10.4697C20.6103 10.329 20.8011 10.25 21 10.25C21.1989 10.25 21.3897 10.329 21.5303 10.4697C21.671 10.6103 21.75 10.8011 21.75 11Z"
@@ -106,187 +93,27 @@
       </div>
     </div>
   </nav>
-  <!-- cover -->
 
-  <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade navegue" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active cover-responsive bg-img-1">
-        <!-- <img src="./static/img/Respawn Royale.png" class="d-block w-100 RespawnRoyale" alt="..."> -->
-      </div>
-      <div class="carousel-item cover-responsive bg-img-2">
-        <!-- <img src="./static/img/Epic Victory.png" class="d-block w-100 EpicVictory" alt="..."> -->
-      </div>
-      <div class="carousel-item cover-responsive bg-img-3">
-        <!-- <img src="./static/img/Infinite Quest.png" class="d-block w-100 InfiniteQuest" alt="..."> -->
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-
-  <!-- Collection -->
-  <div class="d-flex justify-content-center navegue" style="margin-top: 40px;">
-    <h2>NAVEGUE</h2>
-  </div>
-
-  <!-- contetn -->
-  <div class="container d-flex posicao align-items-center justify-content-center" id="responsive" style="margin-top: 40px;">
-    <div class="container">
-      <div class="row g4 my-5">
-        <div class="col product-item mx-auto" style="max-width: 360px;">
-          <div class="product-img">
-            <img class="img-fluid d-block mx-auto" src="./static/img/Epic Victory Product.png" alt="">
-            <span class="heart-icon">
-              <i class="far fa-heart"></i>
-            </span>
-            <div class="btns row w-100 mx-auto text-center">
-              <button type="button" class="col-6 py-2">
-                <i class="fa fa-cart-plus"></i> Adicione à sacola
-              </button>
-              <button type="button" class="col-6 py-2">
-                <i class="fa-fa-binoculars"></i> Observar
-              </button>
-            </div>
-          </div>
-          <div class="product-info p-3">
-            <span class="product-type">Amadeirado</span>
-            <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">
-              <h3>Respawn Royale</h3>
-            </a>
-            <h4 style="text-align: left; width: 215px;">R$ 399,00
-              <br>
-              <span style="font-size: 15px; text-align:start ; ">OU 10X DE
-                39,90</span>
-              </h3>
-              <div class="rating d-flex mt-1">
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>(25 Reviews)</span>
-              </div>
-          </div>
-        </div>
-        <div class="col product-item mx-auto" style="max-width: 360px;">
-          <div class="product-img">
-            <img class="img-fluid d-block mx-auto" src="./static/img/Respawn Royale Product.png" alt="">
-            <span class="heart-icon">
-              <i class="far fa-heart"></i>
-            </span>
-            <div class="btns row w-100 mx-auto text-center">
-              <button type="button" class="col-6 py-2">
-                <i class="fa fa-cart-plus"></i> Adicione à sacola
-              </button>
-              <button type="button" class="col-6 py-2">
-                <i class="fa-fa-binoculars"></i> Observar
-              </button>
-            </div>
-          </div>
-          <div class="product-info p-3">
-            <span class="product-type">Amadeirado</span>
-            <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">
-              <h3>Respawn Royale</h3>
-            </a>
-            <h4 style="text-align: left; width: 215px;">R$ 399,00
-              <br>
-              <span style="font-size: 15px; text-align:start ; ">OU 10X DE
-                39,90</span>
-              </h3>
-              </h3>
-              <div class="rating d-flex mt-1">
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>(25 Reviews)</span>
-              </div>
-          </div>
-        </div>
-        <div class="col product-item mx-auto" style="max-width: 360px;">
-          <div class="product-img">
-            <img class="img-fluid d-block mx-auto" src="./static/img/Infinete quest product.png" alt="">
-            <span class="heart-icon">
-              <i class="far fa-heart"></i>
-            </span>
-            <div class="btns row w-100 mx-auto text-center">
-              <button type="button" class="col-6 py-2">
-                <i class="fa fa-cart-plus"></i> Adicione à sacola
-              </button>
-              <button type="button" class="col-6 py-2">
-                <i class="fa-fa-binoculars"></i> Observar
-              </button>
-            </div>
-          </div>
-          <div class="product-info p-3">
-            <span class="product-type">Amadeirado</span>
-            <a href="#" class="d-block text-dark text-decoration-none py-2 product-name">
-              <h3>Respawn Royale</h3>
-            </a>
-            <h4 style="text-align: left; width: 215px;">R$ 399,00
-              <br>
-              <span style="font-size: 15px; text-align:start ; ">OU 10X DE
-                39,90</span>
-              </h3>
-              </h3>
-              <div class="rating d-flex mt-1">
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>
-                  <i class="fa fa-star"></i>
-                </span>
-                <span>(25 Reviews)</span>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <main>
+    {% block content %}{% endblock %}
+  </main>
 
   <!-- footer -->
   <footer class="border-top bg-dark text-white p-4">
     <div class="container">
       <div class="row py-3">
-        <div class="d-flex col-md-4 col-12 justify-content-center justify-content-md-start align-items-center">
+        <div class="d-flex col-md-4 col-12 justify-content-center justify-content-md-start align-items-center mb-3"
+          style="flex-direction: column;">
           <span class="mb-3 mb-md-0">© 2023 Company, Inc</span>
+          <a href="/PoliticadePrivacidade" class="mb-1 mt-1"  style="color: white; text-decoration: none;">
+            <span>Política de Privacidade</span>
+          </a>
+          <a href="/TermosdeUso" class="mb-1" style="color: white; text-decoration: none;">
+            <span>Termos de Uso</span>
+          </a>
+          <a href="/TrocaseDevolucoes" class="mb-1"  style="color: white; text-decoration: none;">
+            <span>Trocas e Devoluções</span>
+          </a>
         </div>
 
         <a href="/" class="col-md-4 col-12 d-flex align-items-center justify-content-center ">
@@ -337,9 +164,10 @@
       </div>
     </div>
     <ul class="nav justify-content-center align-items-center" style="justify-content: center;">
-      <li class="nav-item"><a href="#" class="nav-link px-2 links-navegar" style="color: white;">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 links-navegar" style="color: white;">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 links-navegar" style="color: white;">Pricing</a></li>
+      <li class="nav-item"><a href="/" class="nav-link px-2 links-navegar" style="color: white;">Home</a></li>
+      <li class="nav-item"><a href="/QuemSomos" class="nav-link px-2 links-navegar" style="color: white;">Quem Somos</a>
+      </li>
+      <li class="nav-item"><a href="/Contato" class="nav-link px-2 links-navegar" style="color: white;">Contato</a></li>
     </ul>
   </footer>
 

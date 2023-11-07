@@ -1,0 +1,22 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <div class="row justify-content-center">
+        <form class="col-sm-10 col-md-8 col-lg-6">
+            <h1>Nova Senha</h1>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" autofocus id="txtNovaSenha" placeholder=" ">
+                <label for="txtNovaSenha">Digite sua nova senha</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" autofocus id="txtConfirmSenha" placeholder=" ">
+                <label for="txtConfirmSenha">Repita a senha digitada acima</label>
+            </div>
+            <a href="/ConfirmNovaSenha" class="btn btn-light btn-outline-danger" style="margin-right: 20px;">Cadastrar nova senha</a>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

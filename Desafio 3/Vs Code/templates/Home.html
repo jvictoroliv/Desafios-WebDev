@@ -1,0 +1,334 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+<div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <a href="/RespawnRoyale">
+      <div class="carousel-item active cover-responsive bg-img-1">
+        <!-- <img src="./static/img/Respawn Royale.png" class="d-block w-100 RespawnRoyale" alt="..."> -->
+      </div>
+    </a>
+    <a href="/epicVictory">
+      <div class="carousel-item cover-responsive bg-img-2">
+        <!-- <img src="./static/img/Epic Victory.png" class="d-block w-100 EpicVictory" alt="..."> -->
+      </div>
+    </a>
+    <a href="/infiniteQuest">
+      <div class="carousel-item cover-responsive bg-img-3">
+        <!-- <img src="./static/img/Infinite Quest.png" class="d-block w-100 InfiniteQuest" alt="..."> -->
+      </div>
+    </a>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- Collection -->
+<div class="d-flex justify-content-center navegue" style="margin-top: 40px;">
+  <h2>NAVEGUE</h2>
+</div>
+
+<!-- Contetn -->
+<div class="container d-flex posicao align-items-center justify-content-center" id="responsive"
+  style="margin-top: 40px;">
+  <div class="container">
+    <div class="row g4 my-5">
+      <div class="col product-item mx-auto mb-3 mt-3" style="max-width: 360px;">
+        <div class="product-img">
+          <a href="/epicVictory">
+            <img class="img-fluid d-block mx-auto" src="./static/img/Epic Victory Product.png" alt="Epic Victory">
+          </a>
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Oriental</span>
+          <a href="/epicVictory" class="d-block text-dark text-decoration-none py-2 product-name">
+            <h3>Epic Victory</h3>
+          </a>
+          <h4 style="text-align: left; width: 215px;">R$ 499,00
+            <br>
+            <span style="font-size: 15px; text-align:start ; ">OU 10X DE
+              49,90</span>
+            </h3>
+            <div class="rating d-flex mt-1">
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="bi bi-star-half"></i>
+              </span>
+              <span>(236 Reviews)</span>
+            </div>
+        </div>
+      </div>
+      <div class="col product-item mx-auto mb-3 mt-3" style="max-width: 360px;">
+        <div class="product-img">
+          <a href="/RespawnRoyale">
+            <img class="img-fluid d-block mx-auto" src="./static/img/Respawn Royale Product.png" alt="Respawn Royale">
+          </a>
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Amadeirado</span>
+          <a href="/RespawnRoyale" class="d-block text-dark text-decoration-none py-2 product-name">
+            <h3>Respawn Royale</h3>
+          </a>
+          <h4 style="text-align: left; width: 215px;">R$ 799,00
+            <br>
+            <span style="font-size: 15px; text-align:start ; ">OU 10X DE
+              79,90</span>
+            </h3>
+            </h3>
+            <div class="rating d-flex mt-1">
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>(492 Reviews)</span>
+            </div>
+        </div>
+      </div>
+      <div class="col product-item mx-auto mb-3 mt-3" style="max-width: 360px;">
+        <div class="product-img">
+          <a href="/infiniteQuest">
+            <img class="img-fluid d-block mx-auto" src="./static/img/Infinete quest product.png" alt="Infinite Quest">
+          </a>
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Citrico</span>
+          <a href="/infiniteQuest" class="d-block text-dark text-decoration-none py-2 product-name">
+            <h3>Infinite Quest</h3>
+          </a>
+          <h4 style="text-align: left; width: 215px;">R$ 399,00
+            <br>
+            <span style="font-size: 15px; text-align:start ; ">OU 10X DE
+              39,90</span>
+            </h3>
+            </h3>
+            <div class="rating d-flex mt-1">
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="bi bi-star"></i>
+              </span>
+              <span>(126 Reviews)</span>
+            </div>
+        </div>
+      </div>
+      <div class="col product-item mx-auto mb-3 mt-3" style="max-width: 360px;">
+        <div class="product-img">
+          <a href="/mysticOdyssey">
+            <img class="img-fluid d-block mx-auto" src="static\img\Mystic Odyssey Product.jpg" alt="Mystic Odyssey">
+          </a>
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Citrico</span>
+          <a href="/mysticOdyssey" class="d-block text-dark text-decoration-none py-2 product-name">
+            <h3>Mystic Odyssey</h3>
+          </a>
+          <h4 style="text-align: left; width: 215px;">R$ 299,00
+            <br>
+            <span style="font-size: 15px; text-align:start ; ">OU 10X DE
+              29,90</span>
+            </h3>
+            </h3>
+            <div class="rating d-flex mt-1">
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="bi bi-star"></i>
+              </span>
+              <span>
+                <i class="bi bi-star"></i>
+              </span>
+              <span>(243 Reviews)</span>
+            </div>
+        </div>
+      </div>
+      <div class="col product-item mx-auto mb-3 mt-3" style="max-width: 360px;">
+        <div class="product-img">
+          <a href="/cosmicAura">
+            <img class="img-fluid d-block mx-auto" src="static\img\Cosmic Aura Product.jpg" alt="Cosmic Aura">
+          </a>
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Citrico</span>
+          <a href="/cosmicAura" class="d-block text-dark text-decoration-none py-2 product-name">
+            <h3>Cosmic Aura</h3>
+          </a>
+          <h4 style="text-align: left; width: 215px;">R$ 250,00
+            <br>
+            <span style="font-size: 15px; text-align:start ; ">OU 10X DE
+              25,00</span>
+            </h3>
+            </h3>
+            <div class="rating d-flex mt-1">
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="bi bi-star-half"></i>
+              </span>
+              <span>(226 Reviews)</span>
+            </div>
+        </div>
+      </div>
+      <div class="col product-item mx-auto mb-3 mt-3" style="max-width: 360px;">
+        <div class="product-img">
+          <a href="/enchantedDream">
+            <img class="img-fluid d-block mx-auto" src="static\img\Enchanted Dream Product.jpg" alt="Enchanted Dream">
+          </a>
+          <span class="heart-icon">
+            <i class="far fa-heart"></i>
+          </span>
+          <div class="btns row w-100 mx-auto text-center">
+            <button type="button" class="col-6 py-2">
+              <i class="fa fa-cart-plus"></i> Adicione à sacola
+            </button>
+            <button type="button" class="col-6 py-2">
+              <i class="fa-fa-binoculars"></i> Observar
+            </button>
+          </div>
+        </div>
+        <div class="product-info p-3">
+          <span class="product-type">Citrico</span>
+          <a href="/enchantedDream" class="d-block text-dark text-decoration-none py-2 product-name">
+            <h3>Enchanted Dream</h3>
+          </a>
+          <h4 style="text-align: left; width: 215px;">R$ 399,00
+            <br>
+            <span style="font-size: 15px; text-align:start ; ">OU 10X DE
+              39,90</span>
+            </h3>
+            </h3>
+            <div class="rating d-flex mt-1">
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="fa fa-star"></i>
+              </span>
+              <span>
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span>(354 Reviews)</span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

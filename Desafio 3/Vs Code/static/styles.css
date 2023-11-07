@@ -8,6 +8,12 @@
 }
 
 /* Nav Links Footer and Navbar */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .links-navegar {
     font-family: Montserrat;
     font-style: normal;
@@ -50,22 +56,27 @@
     left: 16px;
 }
 
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
 
 
 /* Home */
 /* Carousel */
 .bg-img-1 {
-    background-image: url(./static/img/Respawn\ Royale.png);
+    background-image: url(../static/img/Respawn\ Royale.png);
     background-position: 48% 75%;
 }
 
 .bg-img-2 {
-    background-image: url(./static/img/Epic\ Victory.png);
+    background-image: url(../static/img/Epic\ Victory.png);
     background-position: 90% 75%;
 }
 
 .bg-img-3 {
-    background-image: url(./static/img/Infinite\ Quest.png);
+    background-image: url(../static/img/Infinite\ Quest.png);
     background-position: 22% 75%;
 }
 
@@ -189,7 +200,7 @@
     font-size: 24px;
 }
 
-.cart:hover{
+.cart:hover {
     background-color: rgb(148, 9, 9);
     color: white;
 }
@@ -267,6 +278,29 @@
 }
 
 
+/* Login pages */
+
+/* Login */
+.register-login:hover {
+    background-color: #1E1B18;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* Register */
+.register {
+    background: #1E1B18;
+    border: none;
+    color: white;
+}
+
+.register:hover {
+    background-color: #554e48;
+    color: white;
+}
+
+
 
 
 
@@ -283,7 +317,7 @@
 
 
 
-/* Product Page */
+    /* Product Page */
 
     /* Product Infor General */
     #Price {
@@ -315,7 +349,7 @@
         justify-content: center;
         padding-bottom: 10vh;
     }
-    
+
     #wishlist {
         display: block;
         top: 0;
@@ -360,44 +394,67 @@
     }
 
 
+
+
+    /* Login Pages */
+
+    /* Login */
+
+    .longin {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .register-login-container {
+        justify-content: center;
+        display: flex;
+        text-decoration: none;
+    }
+
+
 }
-
-
-
 
 
 /* Fonts */
 @font-face {
     font-family: 'Lost Emerald';
-    src: url(./Fonts/Lost-Emerald.ttf);
+    src: url(../static/Fonts/Lost-Emerald.ttf);
     font-weight: regular;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'Bebas';
-    src: url(./Fonts/Bebas-Regular.ttf);
+    src: url(../static/Fonts/Bebas-Regular.ttf);
     font-weight: regular;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(./Fonts/Montserrat-Regular.ttf);
+    src: url(../static/Fonts/Montserrat-Regular.ttf);
     font-weight: regular;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url(./Fonts/Inter-Bold.ttf);
+    src: url(../static/Fonts/Inter-Bold.ttf);
     font-weight: bold;
     font-size: normal;
 }
 
 @font-face {
     font-family: 'Inter';
-    src: url(./Fonts/Inter-Regular.ttf);
+    src: url(../static/Fonts/Inter-Regular.ttf);
     font-weight: regular;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../static/Fonts/Inter-SemiBold.ttf);
+    font-weight: 600;
     font-size: normal;
 }

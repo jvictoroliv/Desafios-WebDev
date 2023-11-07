@@ -1,0 +1,90 @@
+{% extends "Template.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h1>Carrinho de compras</h1>
+    <hr>
+    <ul class="list-group mb-3 list-group-flush" id="carrinho">
+        <li class="list-group-item py-3">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex align-items-center">
+                    <div class="col-4 col-md-3 col-lg-2">
+                        <a href="#">
+                            <img src="./static/img/Respawn Royale Product.png"
+                                style="width: 100%; height: 100%; object-fit: cover;" alt="Respawn Royale">
+                        </a>
+                    </div>
+                    <div class="text-left align-self-center">
+                        <h4><b><a href="/RespawnRoyale" class="text-decoration-none" style="color: black; margin-left: 20px;">Respawn Royale</a></b></h4>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-3 mt-3">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <h5><b>QUANTIDADE</b></h5>
+                        <div style="background: #f0ecfc; border-radius: 20px; max-width: 200px;">
+                            <div class="input-group align-items-center d-flex">
+                                <button class="bnt-quantity minus" type="button" onclick="decrement()">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="text" value="1" id="qtyInput">
+                                <button class="bnt-quantity plus" type="button" onclick="increment()">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-12 col-md-3 align-self-end mt-3">
+                    <div class="text-right mt-2">
+                        <h5 style="font-size: 25px;"><b>Total: <br> <span id="resultado">799,00</span></b></h5>
+                        <span class="text-dark">Valor do Item: R$ <span id="precoProduto">799,00</span></span>
+                        <a href="/RecupSenha" class="text-muted" style=" color: black; display: flex;">Remover</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<script>
+    var quantidadeElement = document.getElementById("qtyInput");
+    var precoElement = document.getElementById("precoProduto");
+    var resultadoElement = document.getElementById("resultado");
+
+    // Função para calcular o resultado
+    function calcularResultado() {
+        var quantidade = parseInt(quantidadeElement.value);
+        var preco = parseFloat(precoElement.textContent.replace("R$ ", ""));
+        var resultado = quantidade * preco;
+
+        // Atualize o texto no elemento de resultado
+        resultadoElement.textContent = "Total: R$ " + resultado.toFixed(2);
+    }
+
+    // Função para decrementar a quantidade
+    function decrement() {
+        var quantidade = parseInt(quantidadeElement.value);
+        if (quantidade > 1) {
+            quantidadeElement.value = quantidade - 1;
+            calcularResultado();
+        }
+    }
+
+    // Função para incrementar a quantidade
+    function increment() {
+        var quantidade = parseInt(quantidadeElement.value);
+        quantidadeElement.value = quantidade + 1;
+        calcularResultado();
+    }
+
+    // Adicione ouvintes de evento para detectar mudanças na quantidade e no preço
+    quantidadeElement.addEventListener("input", calcularResultado);
+
+    // Chame a função inicialmente para exibir o resultado
+    calcularResultado();
+</script>
+{% endblock %}
